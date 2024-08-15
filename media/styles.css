@@ -1,0 +1,121 @@
+body {
+  background-color: var(--vscode-editor-background);
+  color: var(--vscode-editor-foreground);
+  font-family: var(--vscode-editor-font-family);
+  font-size: var(--vscode-editor-font-size);
+  padding: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="checkbox"] {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid var(--vscode-editor-foreground);
+  border-radius: 3px;
+  background-color: var(--vscode-editor-background);
+  color: var(--vscode-editor-foreground);
+  font-family: var(--vscode-editor-font-family);
+  font-size: var(--vscode-editor-font-size);
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+.suggestions {
+  border: 1px solid var(--vscode-editor-foreground);
+  border-radius: 3px;
+  background-color: var(--vscode-editor-background);
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  position: absolute;
+  width: calc(100% - 20px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: none;
+}
+
+.suggestion-item {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: var(--vscode-list-hoverBackground);
+}
+
+.selected-items {
+  margin-top: 10px;
+}
+
+.selected-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid var(--vscode-editor-foreground);
+  border-radius: 3px;
+  background-color: var(--vscode-editor-background);
+  color: var(--vscode-editor-foreground);
+}
+
+.selected-item:hover .remove-button {
+  display: inline;
+}
+
+.selected-item span {
+  flex-grow: 1;
+}
+
+.remove-button {
+  display: none;
+  background-color: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+  border: none;
+  padding: 2px 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+/* Custom styles for dropdown enum */
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.select-wrapper select {
+  appearance: none;
+  background-color: var(--vscode-editor-background);
+  border: 1px solid var(--vscode-editor-foreground);
+  border-radius: 3px;
+  color: var(--vscode-editor-foreground);
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  font-family: var(--vscode-editor-font-family);
+  font-size: var(--vscode-editor-font-size);
+}
+
+.select-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--vscode-editor-foreground);
+}

@@ -35,6 +35,11 @@
         "icon": "$(add)"
       },
       {
+        "command": "codearchitect.removeItem",
+        "title": "Remove Item",
+        "icon": "$(remove)"
+      },
+      {
         "command": "codearchitect.editObject",
         "title": "Edit Object",
         "icon": "$(edit)"
@@ -91,12 +96,17 @@
       "view/item/context": [
         {
           "command": "codearchitect.addItem",
-          "when": "view == codearchitect-treeview && viewItem == item-array",
+          "when": "view == codearchitect-treeview && viewItem == array-parent-objects",
+          "group": "inline"
+        },
+        {
+          "command": "codearchitect.removeItem",
+          "when": "view == codearchitect-treeview && viewItem == parent-object",
           "group": "inline"
         },
         {
           "command": "codearchitect.editObject",
-          "when": "view == codearchitect-treeview && viewItem == item-object",
+          "when": "view == codearchitect-treeview && viewItem == parent-object",
           "group": "inline"
         }
       ]
@@ -148,5 +158,8 @@
     "typescript": "^5.4.5",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@apidevtools/json-schema-ref-parser": "^11.7.0"
   }
 }
