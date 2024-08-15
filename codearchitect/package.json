@@ -1,0 +1,165 @@
+{
+  "name": "codearchitect",
+  "displayName": "codearchitect",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codearchitect.helloWorld",
+        "title": "Code Architect: Hello World"
+      },
+      {
+        "command": "codearchitect.newProject",
+        "title": "New Project",
+        "icon": "$(file-directory-create)"
+      },
+      {
+        "command": "codearchitect.refresh",
+        "title": "Refresh",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "codearchitect.addItem",
+        "title": "Add Item",
+        "icon": "$(add)"
+      },
+      {
+        "command": "codearchitect.removeItem",
+        "title": "Remove Item",
+        "icon": "$(remove)"
+      },
+      {
+        "command": "codearchitect.editObject",
+        "title": "Edit Object",
+        "icon": "$(edit)"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "codearchitect",
+          "title": "Code Architect",
+          "icon": "resources/code-architect.svg"
+        }
+      ]
+    },
+    "views": {
+      "codearchitect": [
+        {
+          "id": "codearchitect-treeview",
+          "name": "Tree View",
+          "contextualTitle": "Code Architect: Tree View",
+          "type": "tree"
+        },
+        {
+          "id": "codearchitect-properties",
+          "name": "Properties",
+          "contextualTitle": "Code Architect: Properties",
+          "type": "webview"
+        }
+      ]
+    },
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "codearchitect.newProject",
+          "when": "false"
+        },
+        {
+          "command": "codearchitect.refresh",
+          "when": "false"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "codearchitect.newProject",
+          "when": "view == codearchitect-treeview",
+          "group": "navigation"
+        },
+        {
+          "command": "codearchitect.refresh",
+          "when": "view == codearchitect-treeview",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "codearchitect.addItem",
+          "when": "view == codearchitect-treeview && viewItem == array-parent-objects",
+          "group": "inline"
+        },
+        {
+          "command": "codearchitect.removeItem",
+          "when": "view == codearchitect-treeview && viewItem == parent-object",
+          "group": "inline"
+        },
+        {
+          "command": "codearchitect.editObject",
+          "when": "view == codearchitect-treeview && viewItem == parent-object",
+          "group": "inline"
+        }
+      ]
+    },
+    "configuration": [
+      {
+        "title": "Code Architect",
+        "properties": {
+          "codearchitect.pathFileProfile": {
+            "type": "string",
+            "default": "",
+            "description": "Path to the profile of this project"
+          }
+        }
+      },
+      {
+        "title": "Code Architect",
+        "properties": {
+          "codearchitect.pathProjects": {
+            "type": "string",
+            "default": "",
+            "description": "Path to the projects"
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.92.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@apidevtools/json-schema-ref-parser": "^11.7.0"
+  }
+}
