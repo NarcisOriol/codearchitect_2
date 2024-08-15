@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Enumerator",
+  "format": "parent-object",
+  "contentMediaType": "symbol-enum-member",
+  "properties": {
+    "$id": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "$label": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "members": {
+      "contentMediaType": "folder",
+      "format": "array-parent-objects",
+      "type": "array",
+      "items": {
+        "$ref": "./enummember.schema.json"
+      }
+    },
+    "$tag": {
+      "format": "hidden",
+      "type": "array",
+      "const": [
+        "*",
+        "types"
+      ]
+    }
+  }
+}

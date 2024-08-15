@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Requirements",
+  "format": "parent-object",
+  "contentMediaType": "book",
+  "properties": {
+    "$id": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "$label": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "description": {
+      "format": "input-string",
+      "type": "string"
+    },
+    "$tag": {
+      "format": "hidden",
+      "type": "array",
+      "const": ["*", "reqs"]
+    }
+  }
+}

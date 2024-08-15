@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Class",
+  "contentMediaType": "symbol-class",
+  "properties": {
+    "$id": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "$label": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "$ref": "./tags.schema.json"
+      }
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "$ref": "./variable.schema.json"
+      }
+    },
+    "methods": {
+      "type": "array",
+      "items": {
+        "$ref": "./method.schema.json"
+      }
+    },
+    "datastructures": {
+      "type": "array",
+      "items": {
+        "$ref": "./datastructure.schema.json"
+      }
+    },
+    "enumerators": {
+      "type": "array",
+      "items": {
+        "$ref": "./enumerator.schema.json"
+      }
+    },
+    "typedefs": {
+      "type": "array",
+      "items": {
+        "$ref": "./typedefs.schema.json"
+      }
+    },
+    "$tag": {
+      "format": "hidden",
+      "type": "array",
+      "const": [
+        "*",
+        "class"
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Typedef",
+  "contentMediaType": "references",
+  "format": "parent-object",
+  "properties": {
+    "$id": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "$label": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "datatype": {
+      "format": "dropdown-select-tag",
+      "$ref": "./tags.schema.json",
+      "const": ["types"]
+    },
+    "$tag": {
+      "format": "hidden",
+      "type": "array",
+      "const": [
+        "*",
+        "types"
+      ]
+    }
+  }
+}

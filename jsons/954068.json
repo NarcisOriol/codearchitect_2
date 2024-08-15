@@ -1,0 +1,401 @@
+{
+  "$id": "b83d8d57-956f-4ef7-bfda-76c1e1343b58",
+  "$label": "954068",
+  "Classes": [
+    {
+      "$id": "6011e9ad-eb31-40eb-8654-0959e0ffedb9",
+      "$label": "WifiAO",
+      "requirements": [],
+      "variables": [
+        {
+          "$id": "98ff6c62-5962-4096-9b2d-b68c87ab3503",
+          "$label": "wifiAovariable",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "4e02204c-9ae8-4153-bef2-c3f608c47d1d",
+          "$label": "add_item",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "e9ee97cb-25b0-446a-a33a-73d081e36449",
+          "$label": "olala",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "bc22a41d-bee6-4fe2-ad87-45bf1a51b851",
+          "$label": "retre",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "a3059f3c-046c-4ed5-84a7-c3de6f000490",
+          "$label": "olala2",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "7f5461b4-ee19-43dc-8cc1-cef32ddc45ff",
+          "$label": "olal3",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "04c7c382-40b8-4e10-b6ee-01059fb41260",
+          "$label": "dqwdew",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "9b45ae1a-d21b-43f2-8e2c-ab019fb10d7e",
+          "$label": "sfewfew4r4ew",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "232e3b26-5c8d-4a99-8c2f-67dbf46b2e29",
+          "$label": "olala2",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "b3dad8a3-7407-4c0d-a4c3-19693a8f3644",
+          "$label": "erferfe",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "4831c637-3586-4d4b-9d20-d57e1eddad16",
+          "$label": "ewjfmklwe",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "24e29b60-2054-4f76-95b5-02871efb80a4",
+          "$label": "ewde",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "449f9194-24ea-4278-b10a-0cfbca4c4521",
+          "$label": "dsadwdew",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        },
+        {
+          "$id": "fb6b75cf-d7cb-488f-a123-ae74dfc0549d",
+          "$label": "refrefer",
+          "datatype": "",
+          "visibility": "",
+          "isArray": "",
+          "isPointer": false,
+          "isVolatile": false,
+          "isConst": false,
+          "$tag": [
+            "*",
+            "variable"
+          ]
+        }
+      ],
+      "funcions": [
+        {
+          "$id": "fd46bca7-e6e4-4ae3-9053-fdfeb8de57d9",
+          "$label": "funcio3",
+          "returntype": {
+            "datatype": "",
+            "isPointer": false,
+            "isConst": false
+          },
+          "visibility": "",
+          "parameters": [],
+          "$tag": [
+            "*",
+            "funcions"
+          ]
+        }
+      ],
+      "typedefs": [
+        {
+          "$id": "096517a1-3caa-451c-83f0-6c0453985d1e",
+          "$label": "type2",
+          "datatype": "",
+          "$tag": [
+            "*",
+            "types"
+          ]
+        }
+      ],
+      "enumerators": [],
+      "$tag": [
+        "*",
+        "class"
+      ]
+    }
+  ],
+  "Requirements": [],
+  "Primitive Types": [
+    {
+      "$id": "72a2b353-2b86-419b-9b01-6099a7aefea3",
+      "$label": "void",
+      "$tag": [
+        "*",
+        "primitivetypes",
+        "types"
+      ]
+    }
+  ],
+  "$tags": [
+    {
+      "$tag": [
+        "*",
+        "class"
+      ],
+      "$label": "WifiAO",
+      "$id": "6011e9ad-eb31-40eb-8654-0959e0ffedb9"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "wifiAovariable",
+      "$id": "98ff6c62-5962-4096-9b2d-b68c87ab3503"
+    },
+    {
+      "$tag": [
+        "*",
+        "types"
+      ],
+      "$label": "type2",
+      "$id": "096517a1-3caa-451c-83f0-6c0453985d1e"
+    },
+    {
+      "$tag": [
+        "*",
+        "primitivetypes",
+        "types"
+      ],
+      "$label": "void",
+      "$id": "72a2b353-2b86-419b-9b01-6099a7aefea3"
+    },
+    {
+      "$tag": [
+        "*",
+        "funcions"
+      ],
+      "$label": "funcio3",
+      "$id": "fd46bca7-e6e4-4ae3-9053-fdfeb8de57d9"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "add_item",
+      "$id": "4e02204c-9ae8-4153-bef2-c3f608c47d1d"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "olala",
+      "$id": "e9ee97cb-25b0-446a-a33a-73d081e36449"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "retre",
+      "$id": "bc22a41d-bee6-4fe2-ad87-45bf1a51b851"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "olala2",
+      "$id": "a3059f3c-046c-4ed5-84a7-c3de6f000490"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "olal3",
+      "$id": "7f5461b4-ee19-43dc-8cc1-cef32ddc45ff"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "dqwdew",
+      "$id": "04c7c382-40b8-4e10-b6ee-01059fb41260"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "sfewfew4r4ew",
+      "$id": "9b45ae1a-d21b-43f2-8e2c-ab019fb10d7e"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "olala2",
+      "$id": "232e3b26-5c8d-4a99-8c2f-67dbf46b2e29"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "erferfe",
+      "$id": "b3dad8a3-7407-4c0d-a4c3-19693a8f3644"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "ewjfmklwe",
+      "$id": "4831c637-3586-4d4b-9d20-d57e1eddad16"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "ewde",
+      "$id": "24e29b60-2054-4f76-95b5-02871efb80a4"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "dsadwdew",
+      "$id": "449f9194-24ea-4278-b10a-0cfbca4c4521"
+    },
+    {
+      "$tag": [
+        "*",
+        "variable"
+      ],
+      "$label": "refrefer",
+      "$id": "fb6b75cf-d7cb-488f-a123-ae74dfc0549d"
+    }
+  ]
+}

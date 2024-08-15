@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Parameter",
+  "contentMediaType": "symbol-parameter",
+  "format": "parent-object",
+  "properties": {
+    "$id": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "$label": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "datatype": {
+      "format": "dropdown-select-tag",
+      "$ref": "./tags.schema.json",
+      "const": ["types"]
+    },
+    "isArray": {
+      "format": "input-string",
+      "type": "string"
+    },
+    "isPointer": {
+      "format": "checkbox",
+      "type": "boolean"
+    },
+    "pointerDirection": {
+      "format": "dropdown-select",
+      "type": "string",
+      "enum": ["in", "out", "in/out"]
+    },
+    "isPointerToConst": {
+      "format": "checkbox",
+      "type": "boolean"
+    },
+    "isConstPointer": {
+      "format": "checkbox",
+      "type": "boolean"
+    }
+  },
+  "if": {
+    "properties": {
+      "isPointer": { "const": true }
+    }
+  },
+  "then": {
+    "required": ["pointerDirection"],
+    "anyOf": [
+      {
+        "properties": {
+          "isPointerToConst": { "type": "boolean" }
+        }
+      },
+      {
+        "properties": {
+          "isConstPointer": { "type": "boolean" }
+        }
+      }
+    ]
+  },
+  "else": {
+    "not": {
+      "anyOf": [
+        { "required": ["pointerDirection"] },
+        { "required": ["isPointerToConst"] },
+        { "required": ["isConstPointer"] }
+      ]
+    }
+  }
+}

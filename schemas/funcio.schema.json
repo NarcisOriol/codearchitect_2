@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Funcio",
+  "contentMediaType": "symbol-property",
+  "format": "parent-object",
+  "properties": {
+    "$id": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "$label": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "returntype": {
+      "format": "sub-object",
+      "type":"object",
+      "properties": {
+        "datatype": {
+          "format": "dropdown-select-tag",
+          "$ref": "./tags.schema.json",
+          "const": ["types"]
+        },
+        "isPointer": {
+          "format": "checkbox",
+          "type":"boolean"
+        },
+        "isConst": {
+          "format": "checkbox",
+          "type": "boolean"
+        }
+      }
+    },
+    "visibility": {
+      "format": "dropdown-select",
+      "$ref": "./visibility.schema.json"
+    },
+    "parameters": {
+      "contentMediaType": "folder",
+      "format": "array-parent-objects",
+      "type": "array",
+      "items": {
+        "$ref": "./parameter.schema.json"
+      }
+    },
+    "$tag": {
+      "format": "hidden",
+      "type": "array",
+      "const": [
+        "*",
+        "funcions"
+      ]
+    }
+  }
+}

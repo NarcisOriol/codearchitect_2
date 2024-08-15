@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Class",
+  "format": "parent-object",
+  "contentMediaType": "symbol-class",
+  "properties": {
+    "$id": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "$label": {
+      "type": "string",
+      "format": "hidden"
+    },
+    "requirements": {
+      "type": "array",
+      "format": "pool-dropdown-select-tag",
+      "items": {
+        "$ref": "./tags.schema.json",
+        "const": ["reqs"]
+      }
+    },
+    "variables": {
+      "type": "array",
+      "contentMediaType": "folder",
+      "format": "array-parent-objects",
+      "items": {
+        "$ref": "./variable.schema.json"
+      }
+    },
+    "funcions": {
+      "type": "array",
+      "contentMediaType": "folder",
+      "format": "array-parent-objects",
+      "items": {
+        "$ref": "./funcio.schema.json"
+      }
+    },
+    "typedefs": {
+      "type": "array",
+      "contentMediaType": "folder",
+      "format": "array-parent-objects",
+      "items": {
+        "$ref": "./typedefs.schema.json"
+      }
+    },
+    "enumerators": {
+      "type": "array",
+      "contentMediaType": "folder",
+      "format": "array-parent-objects",
+      "items": {
+        "$ref": "./enumerator.schema.json"
+      }
+    },
+    "$tag": {
+      "format": "hidden",
+      "type": "array",
+      "const": [
+        "*",
+        "class"
+      ]
+    }
+  }
+}
